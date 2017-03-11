@@ -83,7 +83,7 @@
                                 <rect key="frame" x="16" y="300" width="343" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="mE0-wM-ijO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="75" id="mE0-wM-ijO">
                                         <rect key="frame" x="0.0" y="28" width="343" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mE0-wM-ijO" id="Ecf-YT-uPx">
@@ -91,7 +91,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GjH-nS-BMz">
-                                                    <rect key="frame" x="16" y="18" width="50" height="50"/>
+                                                    <rect key="frame" x="16" y="18.5" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="08f-Rg-1Qq"/>
                                                         <constraint firstAttribute="height" constant="50" id="JRf-TZ-Jtt"/>
@@ -165,13 +165,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="DateLabel" destination="Th1-cf-v32" id="1EN-pF-hqi"/>
                         <outlet property="currentTempLabel" destination="ybt-0n-NjK" id="3Ss-oA-6xj"/>
                         <outlet property="currentWeatherImage" destination="wyj-vr-8Ly" id="V2s-H0-9iK"/>
                         <outlet property="currentWeatherTypeLabel" destination="Ruw-SE-ulu" id="8b5-fq-reO"/>
                         <outlet property="dateLabel" destination="Th1-cf-v32" id="HFK-w8-F6F"/>
                         <outlet property="locationLabel" destination="ps8-S9-GnC" id="lYR-Es-rqT"/>
-                        <outlet property="weatherTableView" destination="zmf-dc-622" id="uJV-2Q-0UM"/>
+                        <outlet property="tableView" destination="zmf-dc-622" id="lzH-S9-GoE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
