@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B18790F1E71C9A30090074F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B18790E1E71C9A30090074F /* AppDelegate.swift */; };
-		8B1879111E71C9A30090074F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1879101E71C9A30090074F /* ViewController.swift */; };
+		8B1879111E71C9A30090074F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1879101E71C9A30090074F /* WeatherViewController.swift */; };
 		8B1879141E71C9A30090074F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1879121E71C9A30090074F /* Main.storyboard */; };
 		8B1879161E71C9A30090074F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B1879151E71C9A30090074F /* Assets.xcassets */; };
 		8B1879191E71C9A30090074F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B1879171E71C9A30090074F /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 		49A506CDB2AC0A5E327BFF4B /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		8B18790B1E71C9A30090074F /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B18790E1E71C9A30090074F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8B1879101E71C9A30090074F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B1879101E71C9A30090074F /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		8B1879131E71C9A30090074F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8B1879151E71C9A30090074F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B1879181E71C9A30090074F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				8B18790E1E71C9A30090074F /* AppDelegate.swift */,
-				8B1879101E71C9A30090074F /* ViewController.swift */,
+				8B1879101E71C9A30090074F /* WeatherViewController.swift */,
 				8B1879121E71C9A30090074F /* Main.storyboard */,
 				8B1879151E71C9A30090074F /* Assets.xcassets */,
 				8B1879171E71C9A30090074F /* LaunchScreen.storyboard */,
@@ -334,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B1879111E71C9A30090074F /* ViewController.swift in Sources */,
+				8B1879111E71C9A30090074F /* WeatherViewController.swift in Sources */,
 				8B18790F1E71C9A30090074F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +582,7 @@
 				8B1879351E71C9A30090074F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B1879361E71C9A30090074F /* Build configuration list for PBXNativeTarget "WeatherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +591,7 @@
 				8B1879381E71C9A30090074F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B1879391E71C9A30090074F /* Build configuration list for PBXNativeTarget "WeatherAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +600,7 @@
 				8B18793B1E71C9A30090074F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
