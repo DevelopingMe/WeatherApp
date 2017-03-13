@@ -19,10 +19,12 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        print(CURRENT_WEATHER_URL)
     
-    tableView.delegate = self
-    tableView.dataSource = self
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -36,6 +38,24 @@ class WeatherViewController: UIViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
         return cell
     }
+    
+    
+    
+ 
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        
+//        if let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as? WeatherCell {
+//            
+//            let forecast = forecasts[indexPath.row]
+//            cell.configureCell(forecast: forecast)
+//            return cell
+//        } else {
+//            return WeatherCell()
+//        }
+//    }
+
+    
+    
     
 }
 
